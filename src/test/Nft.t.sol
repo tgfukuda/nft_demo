@@ -3,13 +3,13 @@ pragma solidity ^0.8.6;
 
 import "ds-test/test.sol";
 
-import "./Nftdemo.sol";
+import "../Nft.sol";
 
-contract NftdemoTest is DSTest {
-    Nftdemo demo;
+contract NftTest is DSTest {
+    Nft demo;
 
     function setUp() public {
-        demo = new Nftdemo();
+        demo = new Nft("dummy", "DUM");
     }
 
     function testFail_basic_sanity() public {
